@@ -1,0 +1,7 @@
+build/*.js
+config/*.js
+/*.vue
+/components
+/pages
+/store
+/firebase
