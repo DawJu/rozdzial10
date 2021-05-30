@@ -36,6 +36,11 @@ jobs:
       # run tests!
       - run: npm test
 
+      - persist_to_workspace:
+          root: .
+          paths:
+              - .
+
       # deploy to staging!
       - deploy:
           command: |
