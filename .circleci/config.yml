@@ -82,7 +82,6 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               npm run generate
-              ./node_modules/.bin/firebase use default
               ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive
             fi
 workflows:
